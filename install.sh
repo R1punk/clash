@@ -4,7 +4,7 @@ g="\033[1;32m"
 r="\033[1;31m"
 b="\033[1;34m"
 w="\033[0m"
-echo -e $b">"$w" SIGIT - Simple information gathering toolkit"
+echo -e $b">"$w" Termux OpenClash Non Root"
 echo -e $b">"$w" prepare for installing dependencies ..."
 sleep 3
 echo -e $b">"$w" installing package: "$g"update"$w
@@ -19,9 +19,9 @@ echo -e $b">"$w" installing modules: "$g"wget"$w
 pkg install wget
 echo -e $b">"$w" successfully installing dependencies"
 echo -e $b">"$W" settings clash"
-unzip .config.zip $HOME 2>&1
-mv openclash.sh $HOME 2>&1
+unzip .config.zip $HOME $null
+mv openclash.sh $HOME $null
 cd
-rm -R clash 2>&1
+rm -R clash $null
 clear
 bash openclash.sh
