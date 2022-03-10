@@ -11,4 +11,4 @@
 
 
 ### Youtube Clash Termux Non Root
-[![Watch the video](https://ibb.co/jRKg8LD)](https://youtu.be/Od_n5uq03W4) 
+[![Watch the video](https://i.ibb.co/74c2SGK/Screenshot-20220310-155911013.jpg)](https://youtu.be/Od_n5uq03W4) 
