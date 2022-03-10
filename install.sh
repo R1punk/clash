@@ -23,6 +23,6 @@ echo -e $b">"$W" settings clash"
 unzip .config.zip $HOME $null
 mv openclash.sh $HOME $null
 cd
-rm -R clash $null
+rm -r -f clash $null
 clear
 bash openclash.sh
