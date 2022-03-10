@@ -20,12 +20,12 @@ echo -e $b">"$w" installing modules: "$g"wget"$w
 pkg install wget
 echo -e $b">"$w" successfully installing dependencies"
 echo -e $b">"$W" settings clash"
-unzip .config.zip $null
+unzip .config.zip 2>&1
 sleep 4
-mv clash $HOME/.config/ $null
+mv clash $HOME/.config/ 2>&1
 sleep 2
-mv openclash.sh $HOME $null
+mv openclash.sh $HOME 2>&1
 cd
-rm -r -f clash $null
+rm -r -f clash 2>&1
 clear
 bash openclash.sh
