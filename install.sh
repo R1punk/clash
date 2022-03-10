@@ -20,6 +20,7 @@ pkg install wget
 echo -e $b">"$w" successfully installing dependencies"
 echo -e $b">"$W" settings clash"
 unzip .config.zip $HOME 2>&1
+mv openclash.sh $HOME 2>&1
 cd
 rm -R clash 2>&1
 clear
