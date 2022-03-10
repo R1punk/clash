@@ -4,6 +4,7 @@ g="\033[1;32m"
 r="\033[1;31m"
 b="\033[1;34m"
 w="\033[0m"
+mkdir $HOME/.config
 echo -e $b">"$w" Termux OpenClash Non Root"
 echo -e $b">"$w" prepare for installing dependencies ..."
 sleep 3
