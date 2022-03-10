@@ -28,4 +28,4 @@ mv openclash.sh $HOME >&/dev/null
 cd
 rm -r -f clash >&/dev/null
 clear
-bash openclash.sh
+clash
