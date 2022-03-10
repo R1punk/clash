@@ -10,3 +10,5 @@
 - cd clash && bash install.sh
 
 
+### Youtube Clash Termux Non Root
+[![Watch the video](https://ibb.co/jRKg8LD)](https://youtu.be/Od_n5uq03W4) 
