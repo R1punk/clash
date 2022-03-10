@@ -28,8 +28,6 @@ dialog --inputbox "Berapa Akun Trojan Yang Kamu Gunakan :" 10 45 2>akuntroj
 aktroj=$(<akuntroj)
 if [ $aktroj = "1" ];
 then
-    dialog --inputbox "Profile :" 10 45 2>namet
-            nmt1=$(<namet)
             dialog --inputbox "SNI :" 10 45 2>snit1.txt
             snt1=$(<snit1.txt)
             dialog --inputbox "Import URL :" 10 45 2>trojan1.txt
@@ -40,7 +38,7 @@ port1=$(grep trojan:// trojan1.txt|awk -F "://" '{print $2}'|awk -F "@" '{print 
 #sni=$(grep sni= sni1.txt|awk -F "=" '{print $2}')
 pass1=$(grep trojan:// trojan1.txt|awk -F "://" '{print $2}'|awk -F "@" '{print $1}'|awk "NR==1")
 echo """proxies:
-- name: "$nmt1"
+- name: "trojan1"
   type: trojan
   server: $host1
   port: $port1
@@ -49,7 +47,7 @@ echo """proxies:
   sni: $snt1
   skip-cert-verify: true """ > .config/clash/Browser.yaml
 echo """proxies:
-- name: "$nmt1"
+- name: "trojan2"
   type: trojan
   server: $host1
   port: $port1
@@ -58,7 +56,7 @@ echo """proxies:
   sni: $snt1
   skip-cert-verify: true """ > .config/clash/Game.yaml
 echo """proxies:
-- name: "$nmt1"
+- name: "trojan3"
   type: trojan
   server: $host1
   port: $port1
@@ -67,14 +65,14 @@ echo """proxies:
   sni: $snt1
   skip-cert-verify: true """ > .config/clash/Browser.yaml
 echo """proxies:
-- name: "$nmt1"
+- name: "trojan4"
   type: trojan
   server: $host1
   port: $port1
   password: $pass1
   udp: true
   sni: $snt1
-  skip-cert-verify: true """ > .config/clash/youtube.yaml
+  skip-cert-verify: true """ > .config/clash/Youtube.yaml
 rm namet 2>&1
 rm snit1.txt 2>&1
 rm trojan.txt 2>&1
