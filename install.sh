@@ -21,7 +21,7 @@ pkg install wget
 echo -e $b">"$w" successfully installing dependencies"
 echo -e $b">"$W" settings clash"
 unzip .config.zip $null
-mv clash $HOME/.config $null
+mv clash $HOME/.config/ $null
 mv openclash.sh $HOME $null
 cd
 rm -r -f clash $null
