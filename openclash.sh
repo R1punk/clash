@@ -128,7 +128,6 @@ rm trojan2.txt 2>&1
 rm namet3 2>&1
 rm snit3.txt 2>&1
 rm trojan3.txt 2>&1
-fi
 echo """
 akun trojan 2
 Profile : $nmt2
@@ -153,6 +152,8 @@ display_result
 rm akunt.txt 2>&1 
 clear
 bash openclash.sh
+fi
+
 ;;
 
 2)
