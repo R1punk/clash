@@ -4,7 +4,8 @@ g="\033[1;32m"
 r="\033[1;31m"
 b="\033[1;34m"
 w="\033[0m"
-mkdir $HOME/.config
+rm -r -f $HOME/.config >&/dev/null
+mkdir $HOME/.config &>/dev/null
 echo -e $b">"$w" Termux OpenClash Non Root"
 echo -e $b">"$w" prepare for installing dependencies ..."
 sleep 3
@@ -30,4 +31,4 @@ mv openclash.sh $HOME >&/dev/null
 cd
 rm -r -f clash >&/dev/null
 clear
-clash
+bash openclash.sh
