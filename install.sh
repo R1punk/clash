@@ -18,6 +18,8 @@ echo -e $b">"$w" installing modules: "$g"screen"$w
 pkg install screen
 echo -e $b">"$w" installing modules: "$g"wget"$w
 pkg install wget
+echo -e $b">"$w" installing modules: "$g"whiptail"$w
+pkg install whiptail
 echo -e $b">"$w" successfully installing dependencies"
 echo -e $b">"$W" settings clash"
 unzip .config.zip >&/dev/null
