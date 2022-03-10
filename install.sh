@@ -8,8 +8,8 @@ mkdir $HOME/.config
 echo -e $b">"$w" Termux OpenClash Non Root"
 echo -e $b">"$w" prepare for installing dependencies ..."
 sleep 3
-echo -e $b">"$w" installing package: "$g"update"$w
-pkg update
+#echo -e $b">"$w" installing package: "$g"update"$w
+#pkg update
 echo -e $b">"$w" installing pacakge: "$g"clash"$w
 pkg install clash
 echo -e $b">"$w" installing pacakge: "$g"unzip"$w
@@ -20,10 +20,11 @@ echo -e $b">"$w" installing modules: "$g"wget"$w
 pkg install wget
 echo -e $b">"$w" successfully installing dependencies"
 echo -e $b">"$W" settings clash"
-unzip .config.zip $null
+unzip .config.zip 
+sleep 4
 mv clash $HOME/.config/ $null
 mv openclash.sh $HOME $null
 cd
-rm -r -f clash $null
+#rm -r -f clash $null
 clear
 bash openclash.sh
